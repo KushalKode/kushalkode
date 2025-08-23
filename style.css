@@ -57,8 +57,15 @@ main {
   transition: background 0.3s;
 }
 
+<a href="pdfs/Css notes.pdf"download>Download PDF</a>`
+  
+  <a href="pdfs/Java notes.pdf"download>Download PDF</a>`
+  
+  <a href="pdfs/Python notes.pdf"download>Download PDF</a>`
+  
 .download-btn:hover {
   background: #357abd;
 }
+
 
 
