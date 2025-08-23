@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>KushalKode Notes</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KushalKode PDF Notes</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>KushalKode Notes</h1>
-    <h2>More pdf soon..</h2>
-  </header>
+<header>
+  <h1>KushalKode PDF Notes</h1>
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search notes...">
+    <button id="themeToggle">🌙</button>
+  </div>
+</header>
 
-  <a target="_blank" href="https://youtube.com/@kushalkode?si=0qQQsSaAyKHmK2yy">Kushal Kode</a>
-  <a target="_blank" href="https://youtube.com/@kushalkode?si=0qQQsSaAyKHmK2yy">JAVA NOTES</a>
-  <a target="_blank" href="https://youtube.com/@kushalkode?si=0qQQsSaAyKHmK2yy">PYTHON NOTESe</a>
-  <a target="_blank" href="https://github.com/KushalKode/kushalkode/blob/418975cc104d13e26942af04d0f143dc14383338/pdfs/CSS%20notes.pdf">C++ NOTES</a>
+<main>
+  <div id="notesGrid" class="grid"></div>
+  <p id="emptyState" class="hidden">No notes found.</p>
+</main>
 
-  <main>
-    <div id="notes-list"></div>
-  </main>
+<div id="modal" class="modal hidden">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-content">
+    <button class="close-btn" data-close>&times;</button>
+    <h2 id="modalTitle"></h2>
+    <iframe id="pdfFrame"></iframe>
+    <div class="modal-actions">
+      <a id="modalDownload" class="download-btn" download>⬇ Download</a>
+      <button class="close-btn" data-close>Close</button>
+    </div>
+  </div>
+</div>
 
-  <footer>
-    <p>© 2025 KushalKode. All rights reserved.</p>
-  </footer>
+<footer>
+  <p>© <span id="year"></span> KushalKode — All rights reserved.</p>
+</footer>
 
-  <script src="script.js"></script>
-  
-  <a href="pdfs/pdfs/CSS notes.pdf>Download PDF</a>`
-  
-  <a href="pdfs/pdfs/java notes.pdf>Download PDF</a>`
-  
-  <a href="pdfs/Python notes.pdf"download>Download PDF</a>`
-  
-  
+<script src="app.js"></script>
 </body>
 </html>
+
+
 
 
 
